@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto - Claudio Garreton</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-alt">
+            <h1><a href="../index.html" class="navbar__logo">Claudio Garreton</a>
+            </h1>
+            <ul class="navbar__list">
+                <li>
+                    <a href="./sobre-mi.html" class="navbar__item">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="./trayectoria.html" class="navbar__item">Trayectoria</a>
+                </li>
+                <li>
+                    <a href="./servicios.html" class="navbar__item">Servicios</a>
+                </li>
+                <li>
+                    <a href="./contacto.html" class="navbar__item">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor-titulo">
+            <img src="../img/ejemplo.webp" alt="icono" class="titulo-icono">
+            <h2 class="titulo">Contacto</h2>
+        </div>
+        <div class="seccion__contenedor">
+            <form class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required class="formulario__casillas">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required class="formulario__casillas">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required class="formulario__casillas">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required class="formulario__casillas">
+                <label for="servicio">Elegí el servicio</label>
+                <select name="servicio" id="servicio" class="formulario__casillas">
+                    <option disabled selected></option>
+                    <option value="servicio-uno">Servicio 1</option>
+                    <option value="servicio-dos">Servicio 2</option>
+                    <option value="servicio-tres">Servicio 3</option>
+                </select>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="" id="mensaje" cols="30" rows="7" class="formulario__casillas"></textarea>
+                <button type="sumbit" class="formulario__boton">Enviar</button>
+            </form>
+            <div class="contacto-centrado">
+                <p class="contacto__texto-chico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu quam sollicitudin, tempor turpis vel, tristique est. Duis ut magna turpis. Duis sit amet laoreet diam. Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                <ul class="contacto__lista">
+                    <li class="contacto__item">garretonclaudio@gmail.com</li>
+                </ul>
+                <ul class="contacto__lista--dos">
+                    <li class="contacto__item">+54 9 2994 61-3142</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__texto">
+            <p>Desarrollado por Andres Garreton</p>
+            <p>&copy; Todos los derechos reservados</p>
+        </div>
+        <div class="contenedor__footer--medio">
+            <div class="redes__contenedor">
+                <p class="redes__texto">Seguime en</p>
+                <div>
+                    <a href="https://www.facebook.com/claudio.garreton.75" target="_blank"><img class="redes__img"
+                            src="../img/facebook-icon.png" alt="facebook" title="Facebook"></a>
+                    <a href="https://www.instagram.com/garretonclaudio/" target="_blank"><img class="redes__img"
+                            src="../img/instagram-icon.jpg" alt="instagram" title="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor__footer--final">
+            <a href="./sobre-mi.html" class="navbar__item">Sobre mí</a>
+            <a href="./trayectoria.html" class="navbar__item">Trayectoria</a>
+            <a href="./servicios.html" class="navbar__item">Servicios</a>
+            <a href="./contacto.html" class="navbar__item">Contacto</a>
+        </div>
+    </footer>
+</body>
+
+</html>
