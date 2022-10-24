@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Claudio Garreton - Inicio</title>
 </head>
@@ -38,7 +39,7 @@
         </div>
         <section class="seccion">
             <h2 class="seccion__titulo">Sobre mí</h2>
-            <div class="seccion__contenedor">
+            <div data-aos="fade-right" data-aos-delay="150" class="seccion__contenedor">
                 <img class="seccion__img" src="./img/ejemplo.webp" alt="Claudio Garreton" title="Claudio Garreton">
                 <div class="seccion__contenedor-texto">
                     <p class="seccion__texto">¡Hola! Mi nombre es Claudio y quiero darte la bienvenida a mi pagina web.
@@ -73,8 +74,8 @@
         </section>
 
         <section class="seccion">
-            <h2 class="seccion__titulo">Trayectoria</h2>
-            <div class="seccion__contenedor--tres">
+            <h2 data-aos="fade-right" class="seccion__titulo">Trayectoria</h2>
+            <div data-aos="fade-right" class="seccion__contenedor--tres">
                 <div class="tarjeta">
                     <div class="tarjeta-inicial">
                         <h3 class="tarjeta__titulo">Formación académica</h3>
@@ -139,9 +140,9 @@
         </section>
 
         <section class="seccion">
-            <h2 class="seccion__titulo">Servicios</h2>
+            <h2 data-aos="fade-right" class="seccion__titulo">Servicios</h2>
             <div class="seccion__contenedor--tres">
-                <div class="carta">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="carta">
                     <div class="carta__contenedor">
                         <h3 class="carta__titulo">Servicio 1</h3>
                     </div>
@@ -149,7 +150,7 @@
                         <a href="./pages/servicios.html" class="carta__boton">Ver</a>
                     </div>
                 </div>
-                <div class="carta">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="carta">
                     <div class="carta__contenedor">
                         <h3 class="carta__titulo">Servicio 2</h3>
                     </div>
@@ -157,7 +158,7 @@
                         <a href="./pages/servicios.html" class="carta__boton">Ver</a>
                     </div>
                 </div>
-                <div class="carta">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="carta">
                     <div class="carta__contenedor">
                         <h3 class="carta__titulo">Servicio 3</h3>
                     </div>
@@ -169,9 +170,9 @@
         </section>
 
         <section class="seccion">
-            <h2 class="seccion__titulo">Contacto</h2>
+            <h2 data-aos="fade-right" class="seccion__titulo">Contacto</h2>
             <div class="seccion__contenedor">
-                <div class="contacto">
+                <div data-aos="fade-right" class="contacto">
                     <p class="contacto__texto">Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet,
                         potenti primis hendrerit congue ridiculus cum tempus porttitor, imperdiet conubia lobortis
                         quisque habitasse iaculis massa.</p>
@@ -182,7 +183,7 @@
                         <li class="contacto__item">+54 9 2994 61-3142</li>
                     </ul>
                 </div>
-                <div class="contacto">
+                <div data-aos="fade-right" class="contacto">
                     <p class="contacto__texto">En caso de adquirir algun servicio especial, presione el boton y rellene
                         un formulario. Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet, potenti primis
                         hendrerit congue ridiculus cum tempus porttitor, imperdiet conubia lobortis quisque habitasse
@@ -217,6 +218,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
