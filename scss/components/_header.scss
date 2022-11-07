@@ -1,0 +1,58 @@
+header {
+    background-color: $color-primario;
+    height: 13vh;
+    width: 100%;
+    padding: 20px;
+
+    @include mobile {
+        height: 16vh;
+    }
+    
+    .navbar {
+        width: fit-content;
+        margin-left: auto;
+
+        &__logo {
+            color: white;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 25px 30px;
+
+            @include mobile {
+                margin-bottom: 20px;
+            }
+        }
+    
+        &__item {
+            color: rgb(207, 207, 207);
+            margin-right: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+
+            @include mobile {
+                margin-right: 10px;
+                font-size: 0.8rem;
+            }
+    
+            &:hover {
+                color: white;
+                font-size: 1.1rem;
+
+                @include mobile {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    .navbar-alt {
+        color: white;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 25px 30px;
+        
+        @include mobile {
+            flex-direction: column;
+            padding-right: 0px;
+        }
+}
+}

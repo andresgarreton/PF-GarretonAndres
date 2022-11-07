@@ -1,0 +1,15 @@
+.boton {
+    font-size: 1.25rem;
+    color: white;
+    background-color: $color-boton;
+    padding: 15px;
+    margin: 20px;
+    border: 2.8px solid $color-secundario;
+    align-self: center;
+    border-radius: 25px;
+    transition-duration: .2s;
+
+    &:hover {
+        background-color: #0076b6;
+    }
+}
