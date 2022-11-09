@@ -15,10 +15,11 @@
     &__lista {
         list-style-image: url(../img/email-icon-lesstam.png);
         list-style-position: inside;
+        margin: 10px;
 
         &--dos {
             @extend .contacto__lista;
-            margin: 10px;
+            list-style-image: url(../img/phone-icon-lesstam.png);
         }
     }
 
