@@ -13,6 +13,10 @@
     padding: 20px;
     border-radius: 10%;
 
+    @include mobile {
+        width: 90%;
+    }
+
     &__casillas {
         background-color: $color-secundario;
         border: none;
@@ -43,7 +47,7 @@
     text-align: left;
     margin: 20px;
     text-align: left;
-    width: 70%;
+    width: 100%;
 }
 
 .contacto-centrado {
