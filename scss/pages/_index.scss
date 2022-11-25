@@ -42,6 +42,7 @@
         width: 550px;
         height: 550px;
         margin: 20px;
+        object-fit: cover;
 
         @include mobile {
             width: 80%;
@@ -49,6 +50,7 @@
         }
     }
 }
+
 .redes {
     background-color: white;
     width: 400px;
@@ -80,6 +82,7 @@
         }
     }
 }
+
 .carta {
     display: flex;
     flex-direction: column;
@@ -88,10 +91,7 @@
     margin: 40px;
     width: 85%;
 
-    &__contenedor {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)), url(#);
+    %contenedor {
         background-position: center 20%;
         background-size: cover;
         width: 100%;
@@ -99,8 +99,29 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+        &__contenedor--uno {
+            background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../../img/servicio-uno.jpg);
+            @extend %contenedor;
+        }
 
-        &--boton {
+        &__contenedor--dos {
+            background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../../img/servicio-dos.jpg);
+            @extend %contenedor;
+        }
+
+        &__contenedor--tres {
+            background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../../img/servicio-tres.jpg);
+            @extend %contenedor;
+        }
+
+        &__contenedor--boton {
             background-color: $color-boton;
             display: flex;
             justify-content: center;
@@ -112,13 +133,13 @@
                 background-color: #0077B6;
             }
         }
-    }
 
     &__titulo {
         color: white;
         font-size: 1.875rem;
         text-align: center;
         font-weight: bold;
+        margin: 10px;
     }
 
     &__boton {
